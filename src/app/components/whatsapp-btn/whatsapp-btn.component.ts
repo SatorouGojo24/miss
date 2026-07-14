@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   templateUrl: './whatsapp-btn.component.html'
 })
 export class WhatsappBtnComponent {
-  telefono = '525571310061'; 
+  telefono = '525637877700'; 
   
   mensaje = '¡Hola Miss Naty! Vengo de su página web y me gustaría pedirle informes.';
 
