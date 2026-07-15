@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
-import { Services } from '../services/services';
+import { ServicesComponent } from '../services/services'; 
+import { FaqComponent } from '../faq/faq'; 
 
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [Services],
+  imports: [ServicesComponent, FaqComponent],
   templateUrl: './hero.html',
-  styleUrl: './hero.scss',
+  styleUrls: ['./hero.scss']
 })
 export class Hero {}

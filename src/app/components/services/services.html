@@ -1,7 +1,6 @@
-<section id="servicios" class="py-24 bg-gradient-to-br from-pink-500 via-purple-500 to-purple-700 w-full">
+<section id="servicios" class="pt-8 pb-24 bg-gradient-to-br from-pink-500 via-purple-500 to-purple-700 w-full">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     
-
     <div class="text-center mb-16">
       <h2 class="text-4xl font-extrabold text-white tracking-tight">
         Mis Servicios
@@ -14,9 +13,10 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
       
       <div *ngFor="let servicio of servicios; let i = index" 
+           data-aos="fade-up"
+           [attr.data-aos-delay]="i * 150"
            class="bg-white rounded-xl shadow-2xl p-8 flex flex-col items-center text-center transform transition-all duration-300 hover:-translate-y-3 min-h-[420px]">
         
-    
         <img [src]="servicio.imagen" 
              [alt]="servicio.titulo" 
              class="w-48 h-48 mb-6 object-cover rounded-3xl shadow-md transform transition-transform hover:scale-105 border-4 border-pink-50">

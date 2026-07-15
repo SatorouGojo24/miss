@@ -1,32 +1,43 @@
-<!-- 1. SECCIÓN DE PORTADA -->
-<section class="relative bg-white overflow-hidden pt-28 pb-16 md:pt-36 md:pb-24 w-full">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10 relative">
+<section class="relative bg-white overflow-hidden pt-28 pb-16 md:pt-36 md:pb-20 w-full">
+  <div class="absolute top-0 right-0 w-96 h-96 rounded-full bg-gradient-to-br from-pink-200/40 to-purple-200/40 blur-3xl -z-10"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center text-center md:text-left z-10 relative">
     
-    <span class="inline-block py-1 px-4 rounded-full bg-purple-100 border border-purple-200 text-purple-700 text-sm font-bold tracking-wide mb-6">
-      Talentos en Acción
-    </span>
-
-    <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 tracking-tight mb-8">
-      Construyamos juntos su <br class="hidden md:block" />
-      <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500">
-        mejor versión
+    <div>
+      <span class="inline-block py-1 px-4 rounded-full bg-purple-100 border border-purple-200 text-purple-700 text-sm font-bold tracking-wide mb-6">
+        Talentos en Acción
       </span>
-    </h1>
 
-    <p class="mt-4 max-w-2xl text-xl text-gray-600 mx-auto mb-10">
-      Acompañamiento con amor, empatía y profesionalismo para niños, niñas y adolescentes.
-    </p>
+      <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 tracking-tight mb-8">
+        Construyamos juntos su <br class="hidden md:block" />
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500">
+          mejor versión
+        </span>
+      </h1>
 
-    <div class="flex justify-center gap-4">
-      <!-- Fíjate cómo usamos href clásico -->
-      <a href="#servicios" class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-8 rounded-xl transition-all shadow-lg hover:-translate-y-1">
-        Conocer Servicios
-      </a>
+      <p class="mt-4 max-w-2xl text-xl text-gray-600 mx-auto md:mx-0 mb-10">
+        Acompañamiento con amor, empatía y profesionalismo para niños, niñas y adolescentes.
+      </p>
+
+      <div class="flex justify-center md:justify-start gap-4">
+        <a href="#servicios" class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-8 rounded-xl transition-all shadow-lg hover:-translate-y-1">
+          Conocer Servicios
+        </a>
+      </div>
     </div>
+
+    <div class="flex justify-center relative z-10 mt-10 md:mt-0">
+      <img src="hero.svg" alt="Educación e interacción" class="w-full max-w-md object-contain drop-shadow-2xl transform transition-transform hover:scale-105 duration-500">
+    </div>
+
   </div>
   
-  <div class="absolute top-0 right-0 w-96 h-96 rounded-full bg-gradient-to-br from-pink-200/40 to-purple-200/40 blur-3xl -z-10"></div>
+  <div class="absolute bottom-0 left-0 right-0 w-full overflow-hidden leading-none z-0">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="w-full h-auto" preserveAspectRatio="none">
+      <path fill="#EC4899" fill-opacity="1" d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,213.3C672,224,768,224,864,202.7C960,181,1056,139,1152,117.3C1248,96,1344,96,1392,96L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+    </svg>
+  </div>
 </section>
 
-<!-- 2. SECCIÓN DE SERVICIOS (Totalmente libre y en la parte inferior) -->
 <app-services></app-services>
+<app-faq></app-faq>
